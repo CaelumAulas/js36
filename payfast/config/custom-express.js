@@ -3,7 +3,7 @@ const load = require('express-load')
 
 module.exports = () => {
   const app = express()
-  load().into(app)
+  load('controller').into(app)
 
   return app
 }
